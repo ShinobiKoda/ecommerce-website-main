@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Sneakers</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <main>
+      <div class="container">
+        <nav>
+          <div class="ham-logo">
+            <div class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+
+            <div class="logo">
+              <img src="./assets/images/logo.svg" alt />
+            </div>
+          </div>
+
+          <div class="cart-pic">
+            <div class="cart">
+              <img src="./assets/images/icon-cart.svg" alt />
+              <span class="number_of_items">1</span>
+            </div>
+            <div class="profile-pic">
+              <img src="./assets/images/image-avatar.png" alt />
+            </div>
+          </div>
+
+          <div class="links">
+            <ul class="nav_links">
+              <div class="close-btn">
+                <img src="./assets/images/icon-close.svg" alt />
+              </div>
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </nav>
+
+        <section class="slider">
+          <div class="products">
+            <div class="placeholder"></div>
+            <img src="./assets/images/image-product-1.jpg" alt />
+            <img src="./assets/images/image-product-2.jpg" alt />
+            <img src="./assets/images/image-product-3.jpg" alt />
+            <img src="./assets/images/image-product-4.jpg" alt />
+          </div>
+          <button id="prev" class="prev style">
+            <img src="./assets/images/icon-previous.svg" alt />
+          </button>
+          <button id="next" class="next style">
+            <img src="./assets/images/icon-next.svg" alt />
+          </button>
+
+          <div class="cart_container">
+            <div class="cart_info">
+              <div class="header">Cart</div>
+              <div class="empty">Your cart is empty</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="info">
+          <h3>SNEAKER COMPANY</h3>
+          <div class="product-info">
+            <p class="name">Fall Limited Edition Sneakers</p>
+            <p class="about">
+              These low-profile sneakers are just your perfect casual wear
+              companion. Featuring a durable rubber outer sole, they'll
+              withstand everything the weather can offer.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="amount">
+            <div class="price">
+              <div class="normal-price">$<span>125.00</span></div>
+              <div class="discount">50%</div>
+            </div>
+            <div class="initial_price">$250.00</div>
+          </div>
+
+          <div class="add">
+            <img src="./assets/images/icon-minus.svg" alt id="minus" />
+            <div class="item_num">1</div>
+            <img src="./assets/images/icon-plus.svg" alt id="plus" />
+          </div>
+        </section>
+
+        <section class="cart_section">
+          <button class="add_to_cart">
+            <img src="./assets/images/icon-cart.svg" alt />
+            <span>Add to cart</span>
+          </button>
+        </section>
+      </div>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
