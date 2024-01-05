@@ -13,11 +13,24 @@ const badge = document.querySelector(".number_of_items");
 add_to_cart_btn.addEventListener("click", ()=>{
   cart_info.classList.add("show-cart-info");
   badge.classList.add("show-cart-info");
+  update_screen_width();
 })
+
+const update_screen_width = () => {
+  screenWidth = window.innerWidth;
+
+  if(screenWidth > 768){
+    cart_info.style.display = 'none';
+  }
+}
+
+
+window.addEventListener("resize", update_screen_width);
 
 cart.addEventListener("click", () => {
   cart_info.classList.toggle("show-cart-info");
   console.log('cart');
+  update_screen_width();
 });
 
 hamburger.addEventListener("click", (event) => {
@@ -101,3 +114,13 @@ minus_btn.onclick = () => {
   // call the decrease function when the minus button is clicked
   decrease_cart_item_num();
 };
+
+// function showImage(url) {
+//   var placeholder = document.querySelector(".placeholder");
+//   var img = new Image();
+//   img.onclick = function () {
+//     placeholder.innerHTML = "";
+//     placeholder.appendChild(img);
+//   };
+//   img.src = url;
+// }

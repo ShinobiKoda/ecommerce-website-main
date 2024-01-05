@@ -18,6 +18,11 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+.container{
+    max-width: 768px;
+    margin: 0 auto;
+}
+
 .overlay {
     display: none;
     position: fixed;
@@ -93,6 +98,11 @@ nav{
     top: 0;
     display: none;
     cursor: pointer;
+}
+
+.nav_links li:hover{
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .show{
@@ -265,6 +275,7 @@ nav .hamburger.open .line:nth-child(3) {
     top: 25%;
     transform: translateY(-50%);
     top: 50%;
+    cursor: pointer;
 }
 
 .slider .style img{
@@ -392,5 +403,124 @@ nav .hamburger.open .line:nth-child(3) {
     color: var(--white);
     width: 100%;
     margin-top: -2rem;  
+}
+
+.sign:hover{
+   cursor: pointer;
+   opacity: 0.6; 
+}
+
+.desktop-links{
+    display: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.9;
+
+}
+
+.mini-products{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    nav .hamburger{
+        display: none;
+    }
+
+    .desktop-container{
+        margin-top: 5rem;
+        display: flex;
+        gap: 3rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .slider .style{
+        display: none;
+    }
+
+    .desktop-links{
+        display: flex;
+        margin-left: -5rem;
+    }
+
+   .desktop-links ul{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .desktop-links ul li{
+        list-style: none;
+        font-size: 0.9em;
+        
+    }
+
+    .desktop-links ul li:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+
+    .products{
+        margin-top: -3.7rem;
+    }
+
+    .products img{
+        border-radius: 0.5rem;
+
+    }
+
+    .mini-products{
+        display: flex;
+        gap: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .mini-products img{
+        height: 4rem;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        border: 0.2rem solid var(--orange);
+    }
+
+    .mini-products img:hover{
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    .amount{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .desktop-add-to-cart{
+        display: flex;
+    }
+
+    .add_to_cart{
+        padding-block: 0.5rem;
+        width: 13rem;
+        margin: 0;
+    }
+
+    .add{
+        display: flex;
+        gap: 3rem;
+    }
+
 }
 
