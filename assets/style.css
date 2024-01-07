@@ -556,5 +556,11 @@ button:hover {
 
   }
 
+  .cart_section img{
+    height: auto;
+    width: 30px;
+  }
+
+
   
 }
