@@ -115,12 +115,32 @@ minus_btn.onclick = () => {
   decrease_cart_item_num();
 };
 
-// function showImage(url) {
-//   var placeholder = document.querySelector(".placeholder");
-//   var img = new Image();
-//   img.onclick = function () {
-//     placeholder.innerHTML = "";
-//     placeholder.appendChild(img);
-//   };
-//   img.src = url;
-// }
+const img1 = document.getElementById("img-1");
+const img2 = document.getElementById("img-2");
+const img3 = document.getElementById("img-3");
+const img4 = document.getElementById("img-4");
+const displayed_image = document.querySelector(".desktop");
+const product1 = document.getElementById("img1");
+
+const placeholder = document.querySelector(".placeholder");
+
+function updateDisplayedImage(imageSrc) {
+  displayed_image.src = imageSrc;
+}
+
+img1.addEventListener("click", () => {
+  updateDisplayedImage("./assets/images/image-product-1.jpg");
+});
+
+img2.addEventListener("click", () => {
+  updateDisplayedImage("./assets/images/image-product-2.jpg");
+});
+
+img3.addEventListener("click", () => {
+  updateDisplayedImage("./assets/images/image-product-3.jpg");
+});
+
+img4.addEventListener("click", () => {
+  updateDisplayedImage("./assets/images/image-product-4.jpg");
+});
+
