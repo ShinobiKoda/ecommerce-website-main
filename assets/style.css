@@ -467,7 +467,7 @@ button:hover {
   }
 
   .desktop-container {
-    margin-top: 5rem;
+    margin-top: 9rem;
     display: flex;
     gap: 3rem;
     width: 100%;
@@ -477,6 +477,10 @@ button:hover {
 
   .slider .style {
     display: none;
+  }
+
+  .info{
+    margin-top: -6rem;
   }
 
   .desktop-links {
