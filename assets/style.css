@@ -548,6 +548,8 @@ button:hover {
   .add {
     display: flex;
     gap: 3rem;
+    padding-right: 2.6rem;
+
   }
 
   
